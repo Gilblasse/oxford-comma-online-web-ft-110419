@@ -2,7 +2,7 @@ require 'pry'
 
 def oxford_comma(array)
   binding.pry
-  if array.index(array[0]) != array.last
+  if array.index(array.first) != array.index(array.last)
     
   end
   arr =
