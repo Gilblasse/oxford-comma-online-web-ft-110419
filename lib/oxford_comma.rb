@@ -8,7 +8,7 @@ def oxford_comma(array)
           else
             a << item
           end
-      
+      binding
         end
   arr.join(',')
 end
