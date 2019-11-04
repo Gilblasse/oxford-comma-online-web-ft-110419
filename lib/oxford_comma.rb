@@ -1,9 +1,13 @@
 require 'pry'
 
 def oxford_comma(array)
-  
-  if array.index(array.first) != array.index(array.last) && array.size == (array.index(array.last) + 1)
-    array << "and #{arr.pop}"
+  array.each_with_object([]) do |item,a|
+    binding.pry
+    if a.index(a.first) != a.index(a.last) && a.size == (a.index(array.last) + 1)
+       a << "and #{a.pop}"
+    end
+    
   end
+  
  array.join(',')
 end
