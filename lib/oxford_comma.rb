@@ -5,6 +5,8 @@ def oxford_comma(array)
     binding.pry
     if a.size > 0 && a.index(a.first) != a.index(a.last) && a.size == (a.index(array.last) + 1)
        a << "and #{a.pop}"
+    else
+      a << item
     end
     
   end
